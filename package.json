@@ -1,0 +1,16 @@
+{
+  "name": "front-end-(electron)",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^20.0.1",
+    "electron-store": "^8.1.0"
+  }
+}

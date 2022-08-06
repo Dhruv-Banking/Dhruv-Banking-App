@@ -1,0 +1,9 @@
+body {
+  background-color: var(--offWhite);
+}
+
+:root {
+  --offWhite: #edf0f1;
+  --accent: #0088a9;
+  --grey: #24252a;
+}
