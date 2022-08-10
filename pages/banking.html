@@ -12,6 +12,8 @@
       <h2>Dhruv Banking™</h2>
     </nav>
 
+    <button id="logOutButton" onclick="">Log out</button>
+
     <main>
       <div class="DHR__Main-Account Checkings">
         <h2>Checkings</h2>
@@ -28,8 +30,9 @@
         <h2>Transfer Money From Accounts</h2>
 
         <form
+          id="DHR__Main-Transfer_Money_sameAccount"
+          onsubmit="return false"
           class="DHR__Main-Transfer_Money_sameAccount"
-          onsubmit="getTransferData(); return false"
         >
           <div>
             <select id="transferFrom" name="transferFrom">
@@ -38,7 +41,7 @@
             </select>
 
             <div>
-              <img src="../Images/download.png" alt="" />
+              <img src="../images/download.png" alt="" />
             </div>
 
             <select id="transferTo" name="transferTo">
@@ -64,7 +67,7 @@
 
       <div class="DHR__Main-Transfer_Money-AnotherUser">
         <h2>Transfer money to another User</h2>
-        <form onsubmit="getData(); return false">
+        <form onsubmit="">
           <!-- USERNAME -->
           <input
             id="Username"
@@ -134,5 +137,9 @@
         <h2>© Bank of Dhruv 2022</h2>
       </div>
     </footer>
+
+    <script>
+      require("../js/banking.js");
+    </script>
   </body>
 </html>
