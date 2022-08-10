@@ -5,9 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-Up | Dhruv Banking</title>
+    <link rel="stylesheet" href="../css/signUp.css" />
   </head>
   <body>
-    <form>
+    <nav onclick="">
+      <h2>Dhruv Banking™</h2>
+    </nav>
+
+    <button id="logInBtn" onclick="">Log In!</button>
+
+    <form onsubmit="">
       <h2>Sign Up!</h2>
 
       <label for="Username">Username:</label>
@@ -16,15 +23,50 @@
         name="Username"
         id="Username"
         placeholder="Enter Username Please"
+        required
       />
 
-      <label for="password"></label>
+      <label for="Firstname">Firstname:</label>
+      <input
+        type="text"
+        name="Firstname"
+        id="Firstname"
+        placeholder="Enter Firstname Please"
+        required
+      />
+
+      <label for="Lastname">Lastname:</label>
+      <input
+        type="text"
+        name="Lastname"
+        id="Lastname"
+        placeholder="Enter Lastname Please"
+        required
+      />
+
+      <label for="Email">Email:</label>
+      <input
+        type="text"
+        name="Email"
+        id="Email"
+        placeholder="Enter Email Please"
+        required
+      />
+
+      <label for="Password">Password</label>
       <input
         type="text"
         name="Password"
         id="Password"
         placeholder="Enter Password Please"
+        required
       />
+
+      <input type="submit" id="Submit" />
     </form>
+
+    <script>
+      require("../js/signUp.js");
+    </script>
   </body>
 </html>

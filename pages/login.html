@@ -4,9 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login | Dhruv Banking</title>
+    <title>Login| Dhruv Banking</title>
+    <link rel="stylesheet" href="../css/login.css" />
   </head>
   <body>
-    <h1>Login</h1>
+    <nav>
+      <h2>Dhruv Banking™</h2>
+    </nav>
+
+    <button id="signInButton" onclick="">Sign Up!</button>
+
+    <form onsubmit="">
+      <h2>Login!</h2>
+
+      <label for="Username">Username:</label>
+      <input
+        type="text"
+        name="Username"
+        id="Username"
+        placeholder="Enter Username Please"
+        required
+      />
+
+      <label for="Password">Password</label>
+      <input
+        type="text"
+        name="Password"
+        id="Password"
+        placeholder="Enter Password Please"
+        required
+      />
+
+      <input type="submit" id="Submit" />
+    </form>
+
+    <script>
+      require("../js/login.js");
+    </script>
   </body>
 </html>
