@@ -36,49 +36,23 @@ nav h2 {
   transition: all 0.5s;
 }
 
-nav h2:hover {
-  padding-top: 2rem;
-}
-
-nav > ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style-type: none;
-  width: 14%;
-}
-
-nav > ul li a {
+#logOutButton {
+  font-size: 1.3rem;
+  padding: 0.5rem 1.5rem;
+  background: transparent;
+  border: var(--blue) solid 2px;
+  border-radius: 5px;
   color: var(--blue);
-  text-decoration: none;
+  transition: all 0.3s;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }
 
-nav > ul li {
-  display: inline-block;
-  margin: 0 4% 4% 4%;
+#logOutButton:hover {
+  cursor: pointer;
+  opacity: 0.5;
 }
-
-.logOut {
-  color: var(--white);
-  background-color: var(--blue);
-  padding: 1rem;
-  border-radius: 10px;
-  transition: all 0.3s ease-in-out;
-}
-
-.logOut:hover {
-  opacity: 0.7;
-}
-
-hr {
-  width: 90%;
-  margin-left: calc(100 - 90 / 2);
-  border: none;
-  height: 1.1px;
-  color: var(--grey);
-  background-color: var(--grey);
-}
-
 /* -- MAIN -- */
 .DHR__Main-Account {
   color: var(--white);
@@ -94,7 +68,7 @@ hr {
 
 .Checkings {
   background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
-    url("../Images/Checkings.jpg");
+    url("../images/Checkings.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -102,7 +76,7 @@ hr {
 
 .Savings {
   background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
-    url("../Images/Savings.jpg");
+    url("../images/Savings.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
