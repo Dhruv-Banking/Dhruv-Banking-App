@@ -2,7 +2,7 @@
   "name": "front-end-(electron)",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
     "start": "electron ."
   },
@@ -10,7 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.0.1",
     "electron": "^20.0.1",
-    "electron-store": "^8.1.0"
+    "electron-store": "^8.1.0",
+    "node-fetch": "^3.2.10"
   }
 }
